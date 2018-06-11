@@ -18,9 +18,19 @@ current_day = 11
 current_month= 6
 user_month = int(raw_input("Enter the number of your birth month: "))
 user_day = int(raw_input("enter the number of your birth day: "))
-if user_month >= current_month
-    str(user_month - current_month)
-else: str()
+q= user_month-current_month
+a= 12-(current_month-user_month)
+b= user_day-current_day
+d= 30 - (current_day-user_day)
+if user_month > current_month:
+    print str(q) + "months and"
+else:
+    print str(a) + " months and"
+if user_day >= current_day:
+   print str(b) + " days until birthday"
+else:
+    print str(d) + "days until birthday"
+
 
 
 # If you complete extensions, describe your extensions here!
