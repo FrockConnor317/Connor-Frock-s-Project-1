@@ -11,3 +11,13 @@ previous two numbers in the sequence. The sequence looks like this:
 """
 
 
+pre=0
+curr=1
+x = int(raw_input("How many Fibonacci numbers would you like?"))
+for number in range(0,x):
+    print curr
+    pre = curr + int(pre)
+    curr = curr = pre
+
+
+    
